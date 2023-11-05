@@ -1,0 +1,323 @@
+section {
+  display: block;
+  margin: 5% 5% 0 5%;
+  padding: 1.2rem;
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  height: fit-content;
+}
+
+section h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h1 .wave {
+  display: inline-block;
+}
+
+h1 .wave:hover {
+  rotate: -20deg;
+  transition: rotate 0.1s ease;
+}
+
+section p {
+  line-height: 30px;
+}
+
+.title {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* Section 1 - Greetings */
+
+.greetings {
+  font-size: 120%;
+  border-radius: 2px;
+  padding: 10px 20px;
+  width: fit-content;
+  line-height: normal;
+}
+
+.biography {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  background-color: #a5ffff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px;
+}
+
+.bio-content img {
+  float: left;
+  padding: 0;
+  width: 250px;
+  height:188px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 5px solid #bec4e1;
+  margin-right: 1rem;
+}
+
+.bio-content p {
+  text-align: left;
+}
+
+.biography span {
+  background-color: #bec4e1;
+  padding: 2px;
+}
+
+/* Section 2 - My Career Journey */
+
+.section-journey {
+  height: fit-content;
+}
+
+.section-journey h1 {
+  margin-top: 1rem;
+}
+
+@supports (clip-path: polygon(0% 20%)) {
+  .section-journey {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    height: 685px;
+  }
+  .section-journey h1 {
+    margin-top: 160px;
+  }
+  .right-point {
+    padding: 1rem;
+    background-color: #e37676;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+}
+
+.slider {
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #d3cfd2;
+  border-radius: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  --webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+}
+ 
+.slider-group {
+  display: inline-flex;
+}
+
+.slider-item {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  white-space: normal;
+}
+
+.slider-item ul {
+  width: 250px;
+  text-wrap: wrap;
+}
+
+.slider-item li {
+  display: block;
+  background: #e9eaf5;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.slider-item:last-of-type {
+  margin-right: 250px;
+}
+
+.slider-title {
+  user-select: none;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: #908fe5;
+  border-radius: 2px;
+  width: fit-content;
+}
+
+.slider-title:hover {
+  background-color: #8459d9;
+  cursor: pointer;
+  rotate: 2deg;
+  transform: translateX(-4px);
+  transition: all 0.1s ease-in-out;
+}
+
+.slider-active {
+  border: 2px solid #9bc2ff;
+  box-shadow: #282828 1px 1px 1px 10px;
+}
+
+/* Section 3 - Projects Built to Date */
+
+.project-group span {
+  background-color: #bec4e1;
+  padding: 2px;
+  text-transform: capitalize;
+}
+
+.project-title {
+  font-size: 120%;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #7d8cd3;
+  border-radius: 6px;
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.card {
+  display: inline-block;
+  border: 2px solid #9cbed3;
+  border-radius: 6px;
+  height: fit-content;
+  width: 20.5%;
+  padding: 1rem;
+  padding-bottom: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.card-overview p {
+  text-align: center;
+  padding: 0;
+}
+
+.card-details-btn {
+  display: block;
+  font-size: 80%;
+  width: 120px;
+  background-color: #abd3e7;
+  border: none;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.card-details-btn:hover {
+  background-color: #6db0e1;
+  transition: background-color 0.2s ease-out;
+}
+
+.card-details {
+  visibility: hidden;
+  overflow: hidden;
+  font-size: 80%;
+  margin-top: 20px;
+  height: 0;
+  max-height: 0;
+}
+
+.card-details-active {
+  visibility: visible;
+  display: block;
+  text-align: left;
+  max-height: 9999px;
+  height: fit-content;
+  transition: max-height 0.8s ease-in;
+}
+
+.extra-title {
+  background-color: #dee9f1;
+  text-align: center;
+  border-radius: 2px;
+}
+
+/* Section 4 - My Skills */
+
+.skills-content {
+  display: block;
+}
+
+.image-border {
+  border-radius: 20px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-top: 30px solid #000;
+  border-bottom: 30px solid #000;
+  background: #282828;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.bar-chart {
+  display: flex;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+  border-radius: 6px;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+  padding: 20px;
+}
+
+.chart-title {
+  display: block;
+  font-size: 120%;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chart-text {
+  font-weight: 500;
+  display: block;
+  margin-top: -25px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+.percent {
+  display: block;
+  background-color: #9bc2ff;
+  width: fit-content;
+  font-size: 0.8em;
+  padding: 0 8px;
+  text-transform: uppercase;
+  height: 40px;
+  border-radius: 2px;
+  transition: width 0.8s ease-out;
+}
+
+.section-skills img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px;
+}
+
+/* Addendum: Poem */
+.poem {
+  display: block;
+  background-color: #f2f2f2;
+  width: 200px;
+  padding: 1rem;
+  margin: 4rem auto;
+  border-top: 5px solid #e37676;
+  border-radius: 2px;
+  text-align: center;
+}
+.poem span {
+  font-style: italic;
+}
+
+.poem-title {
+  font-size: 140%;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #b4cae5;
+  width: fit-content;
+  margin: 0 auto;
+}

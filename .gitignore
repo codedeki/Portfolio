@@ -1,0 +1,15 @@
+# Exclude dependencies
+npm
+.env
+
+# Files to exclude
+src/assets/img/*.gif
+src/assets/img/portfolio.png
+
+# Folders to exclude with exceptions
+src/assets/font/**
+# !src/assets/font/**/
+!src/assets/font/**/font.md
+src/assets/video/**
+# !src/assets/**/
+!src/assets/video/**/video.md
