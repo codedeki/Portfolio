@@ -214,14 +214,14 @@ function addVideoTagOnOverlay(path, comment = null) {
       if (comment) {
         let commentMarkup = `<p class="video-comment">${comment}</p>`;
         overlayContent.insertAdjacentHTML("beforeend", commentMarkup);
+      }
 
-        const videoTags = document.querySelectorAll(".video");
-
-        if (videoTags) {
-          videoTags.forEach(tag => {
-            preventVideoDownload(tag);
-          })
-        }
+      const videoTags = document.querySelectorAll(".video");
+      
+      if (videoTags) {
+        videoTags.forEach(tag => {
+          preventVideoDownload(tag);
+        })
       }
     }
   }
